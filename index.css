@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding: 0px;
+}
+
+
+
+
+/* Home */
+innerhome:before{
+    content: "";
+    position: absolute;
+    background: url(./static/home.jpg);
+    width:100%;
+    height:90%;
+    z-index: -1;
+    filter:brightness(0.3)
+}
+.btn{
+    padding: 0.7rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+
+    border-radius: 5px;
+    background-color: rgb(67, 122, 138);
+    color: white;
+}
+
+
+.btn:hover{
+    background-color: rgb(52, 101, 118);
+}
+
+innerhome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:90vh;
+}
+innerhome h1{
+    color: white;
+    font-size: 3rem;
+    
+}
+innerhome p{
+    color: white;
+    font-size: 1.3rem;
+    margin: 1rem;
+}
+.btns{
+    margin: 1rem;
+}
+
+
+
+/* WHy */
+.why{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(84, 68, 68);
+}
+
+.heading{
+    font-size: 2rem;
+    text-decoration: underline;
+    text-align: center;
+    color: white;
+    margin: 1rem 0px;
+}

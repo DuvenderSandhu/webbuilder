@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Components at One Place</title>
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="./static/Navbar1.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+<body>
+    <nav>
+        <h1 class="logo">WebBuilder</h1>
+        <ul class="mainul">
+            <li><a href="index.html">Home</a></li>
+            <ul class="dropdown">
+                <button class="dropdownbtn">Components</button>
+                <div class="drop">
+                    <li class="dropdownitem"><a href="#">HTML + CSS</a></li>
+            <li class="dropdownitem"><a href="#">HTML + CSS + JS</a></li>
+                </div>
+            </ul>
+        </ul>
+    </nav>
+    <home>
+        <innerhome>
+            <h1 class="mainheading">Components</h1>
+        </innerhome>
+    </home>
+
+    <div class="components">
+        <p class="heading">Navbar</p>
+        <div class="demo"><nav>
+            <h2>Notrrr</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="btns">
+                <button class="btn">Signup</button>
+            <button class="btn">Login</button>
+            </div>
+        </nav></div>
+        <div class="btns" style="margin:5px;display:flex;justify-content: center;">
+            <div class="btn">Copy Code</div>
+            <div class="btn">See Code</div>
+        </div>
+        <div class="code">
+            <div class="html">
+                <div class="sticky">
+                    <button class="copyBtn">Copy</button>
+                    <h1 class="heading codeheading">HTML</h1>
+                <hr>
+                </div>
+                <pre>&lt;nav&gt;
+    &lt;h2&gt;Notrrr&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a&gt; href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a&gt; href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a&gt; href="#"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div class="btns"&gt;
+        &lt;button&gt; class="btn"&gt;Signup&lt;/button&gt;
+    &lt;button&gt; class="btn"&gt;Login&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;</pre>
+            </div>
+            <div class="css">
+                <div class="sticky">
+                    <button class="copyBtn">Copy</button>
+                    <h1 class="heading codeheading">CSS</h1>
+                <hr>
+                </div>
+                <pre>*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+nav {
+    display: flex;
+    align-items: center;
+    background: black;
+    padding: 1rem 2rem;
+    color: white;
+    position: sticky;
+    top:0px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: auto;
+}
+.right img{
+    height: 250px;
+    border-radius: 10px;
+    width:400px;
+}
+nav ul a{
+    color: white;
+    text-decoration: none;
+    margin: 0px 0.5rem ;
+    padding: 0px 0.5rem ;
+    font-size: 1.2rem;
+}
+nav ul a:hover{
+    color: #5e673e;
+}
+.btns{
+    display: flex;
+}
+.btn{
+    background:#5e673e;
+    padding: 0.5rem;
+    outline: none;
+    color: white;
+    margin: 0px 0.5rem;
+    font-size: 1rem;
+    border-radius: 2px;
+    cursor: pointer;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover{
+    font-weight: bolder;
+    color: black;
+    background-color: white;
+}
+@media screen and (max-width: 650px) {
+    nav {
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+
+    }
+                </pre>
+            </div>
+        </div>
+    </div>
+
+<!-- alert -->
+<div class="components">
+    <p class="heading">Alert</p>
+    <div class="demo">
+        <div  style="display: flex;color: darkred;background-color: rgb(243, 243, 190);align-items: center;font-size: 1.1rem;padding: 20px;">
+            <div style="font-weight: bold;">Success:</div>
+            <div class="para">Lorem ipsum dolor sit amet consectetur.</div>
+        </div>
+    </div>
+    <div class="btns" style="margin:5px;display:flex;justify-content: center;">
+        <div class="btn">Copy Code</div>
+        <div class="btn">See Code</div>
+    </div>
+    <div class="code">
+        <div class="html">
+            <div class="sticky">
+                <button class="copyBtn">Copy</button>
+                <h1 class="heading codeheading">HTML</h1>
+            <hr>
+            </div>
+            <pre></pre>
+        </div>
+        <div class="css">
+            <div class="sticky">
+                <button class="copyBtn">Copy</button>
+                <h1 class="heading codeheading">CSS</h1>
+            <hr>
+            </div>
+            <pre>.alert{
+    display: flex;
+    color: darkred;
+    background-color: rgb(243, 243, 190);
+    align-items: center;
+    font-size: 1.1rem;
+    padding: 20px;
+}
+.alert .heading{
+    font-weight: bold;
+}</pre>
+        </div>
+    </div>
+</div>
+
+
+<div class="components">
+    <p class="heading">Button</p>
+    <div class="demo">
+        <button style="background-color: blue;font-weight: bold;color: white;padding: 10px;border: none;border-radius: 5px;">Button</button>
+    </div>
+    <div class="btns" style="margin:5px;display:flex;justify-content: center;">
+        <div class="btn">Copy Code</div>
+        <div class="btn">See Code</div>
+    </div>
+    <div class="code">
+        <div class="html">
+            <div class="sticky">
+                <button class="copyBtn">Copy</button>
+                <h1 class="heading codeheading">HTML</h1>
+            <hr>
+            </div>
+            <pre><button class="btn">Button</button></pre>
+        </div>
+        <div class="css">
+            <div class="sticky">
+                <button class="copyBtn">Copy</button>
+                <h1 class="heading codeheading">CSS</h1>
+            <hr>
+            </div>
+            <pre>.btn{
+    background-color: blue;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}</pre>
+        </div>
+    </div>
+</div>
+
+
+<!-- Card Components -->
+<div class="components">
+    <p class="heading">Cards</p>
+    <div class="demo">
+        <!-- Alert Demo -->
+        <div class="card" style="width: 250px;border: 2px solid rgb(43, 43, 43);background-color: snow;border-radius: 5px;">
+            <div class="img">
+                <svg width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+            </div>
+            <div class="latter" style="padding: 5px;">
+                <div class="info" style="text-align: justify;">
+                    <h1 style="margin: 0px;">Heading</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, corrupti!</p>
+                </div>
+                <div class="btns" style="display: flex;justify-content: center;padding: 5px;">
+                    <button class="btn" style="background-color: blue;font-weight: bold;color: white;cursor: pointer;padding: 10px;border: none;width: 100px;border-radius: 5px;">Button</button>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="btns" style="margin:5px;display:flex;justify-content: center;">
+        <div class="btn">Copy Code</div>
+        <div class="btn">See Code</div>
+    </div>
+    <div class="code">
+        <div class="html">
+            <div class="sticky">
+                <button class="copyBtn">Copy</button>
+                <h1 class="heading codeheading">HTML</h1>
+            <hr>
+            </div>
+            <pre><div class="card">
+    <div class="img">
+        <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+    </div>
+    <div class="latter">
+        <div class="info">
+            <h2>Heading</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, corrupti!</p>
+        </div>
+        <div class="btns">
+            <button class="btn">Button</button>
+        </div>
+    </div>
+</div></pre>
+        </div>
+        <div class="css">
+            <div class="sticky">
+                <button class="copyBtn">Copy</button>
+                <h1 class="heading codeheading">CSS</h1>
+            <hr>
+            </div>
+            <pre>.btn{
+    background-color: blue;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    width: 100px;
+    border-radius: 5px;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+.card{
+    width: 250px;
+    border: 1px solid rgb(43, 43, 43);
+    background-color: snow;
+}
+.latter{
+    padding: 5px;
+}
+.info h2{
+    margin: 0px;
+}</pre>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="components">
+    <p class="heading">Carousel</p>
+    <div class="demo">
+        <!-- Alert Demo -->
+    </div>
+    <div class="btns" style="margin:5px;display:flex;justify-content: center;">
+        <div class="btn">Copy Code</div>
+        <div class="btn">See Code</div>
+    </div>
+    <div class="code">
+        <div class="html">
+            <div class="sticky">
+                <button class="copyBtn">Copy</button>
+                <h1 class="heading codeheading">HTML</h1>
+            <hr>
+            </div>
+            <pre></pre>
+        </div>
+        <div class="css">
+            <div class="sticky">
+                <button class="copyBtn">Copy</button>
+                <h1 class="heading codeheading">CSS</h1>
+            <hr>
+            </div>
+            <pre></pre>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Sample Components -->
+<div class="components">
+    <p class="heading">Sample</p>
+    <div class="demo">
+        <!-- Alert Demo -->
+    </div>
+    <div class="btns" style="margin:5px;display:flex;justify-content: center;">
+        <div class="btn">Copy Code</div>
+        <div class="btn">See Code</div>
+    </div>
+    <div class="code">
+        <div class="html">
+            <div class="sticky">
+                <button class="copyBtn">Copy</button>
+                <h1 class="heading codeheading">HTML</h1>
+            <hr>
+            </div>
+            <pre></pre>
+        </div>
+        <div class="css">
+            <div class="sticky">
+                <button class="copyBtn">Copy</button>
+                <h1 class="heading codeheading">CSS</h1>
+            <hr>
+            </div>
+            <pre></pre>
+        </div>
+    </div>
+</div>
+</body>
+<script src="index.js"></script>
+<!-- <script src="components.js"></script> -->
+</html>

@@ -1,0 +1,195 @@
+*{
+    margin:0;
+    padding: 0px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 2rem ;
+    background-color: rgb(56, 45, 45);
+    color: white;
+}
+nav .mainul{
+    width: 70%;
+    justify-content: center;
+    display: flex;
+    list-style: none;
+
+    align-items: center;
+}
+nav .mainul a{
+    margin: 0px 0.5rem;
+    padding: 0px 0.5rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+nav .mainul a:hover{
+    color: rgb(142, 205, 225);
+}
+nav .mainul button{
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    outline: none;
+    background-color: rgb(56, 45, 45);
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+nav .mainul button:hover{
+    color: rgb(142, 205, 225);
+}
+.drop{
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    list-style: none;
+    background-color: rgb(56, 45, 45);
+    display: none;
+    
+}
+.drop li{
+    margin:  5px;
+    padding: 5px ;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+.drop li a{
+    color: white;
+    font-size: 1rem;
+
+}
+.drop li a:hover{
+    color: rgb(142, 205, 225);
+
+}
+
+
+
+
+
+
+/* Home */
+innerhome:before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0,0,0,0.9);
+    width:100%;
+    height:60%;
+    z-index: -1;
+    color: white;
+}
+.btn{
+    padding: 0.7rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+
+    border-radius: 5px;
+    background-color: rgb(67, 122, 138);
+    color: white;
+}
+
+
+.btn:hover{
+    background-color: rgb(52, 101, 118);
+}
+innerhome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:60vh;
+
+}
+innerhome h1{
+    color: white;
+    font-size: 3rem;
+    
+}
+
+/* COmponents */
+.heading{
+    font-size: 2rem;
+    text-decoration: underline;
+    text-align: center;
+    color: yellow;
+    padding: 1rem 0px;
+}
+
+.components{
+    margin: 0px;
+    background-color: rgba(0,0,0,0.9);
+
+    padding: 1rem;
+}
+
+.code{
+    width: 70%;
+    display: none;
+    margin: auto;
+    padding: 1rem;
+    justify-content: space-around;
+    height: 50vh;
+    font-size: 1rem;
+}
+.codeheading{
+    color: wheat;
+}
+.html{
+    background-color: rgba(0,0,0,0.4);
+    width: 40%;
+    border-radius: 10px;
+    overflow: scroll;
+    color: rgb(248, 248, 163);
+
+}
+.css{
+    width: 40%;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 10px;
+    color: rgb(142, 142, 69);
+    overflow: scroll;
+}
+.css pre{
+    padding: 0.5rem;
+}
+.html pre{
+    padding: 0.5rem;
+}
+.css::-webkit-scrollbar{
+    display: none;
+}
+.html::-webkit-scrollbar{
+    display: none;
+}
+.demo{
+    width:80%;
+    margin: auto;
+    background-color: whitesmoke;
+    padding: 2px;
+    border-radius: 2px;
+}
+.sticky{
+    position: sticky;
+    top: 0px;
+    background-color: black;
+}
+.copyBtn{
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    border: 2px solid lightpink;
+    border-radius: 10px;
+    background-color: transparent;
+    color: lightpink;
+    padding: 5px;
+    cursor: pointer;
+}
+.copyBtn:hover{
+    transform: scale(1.03);
+}

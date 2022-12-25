@@ -1,0 +1,67 @@
+nav{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 2rem ;
+    background-color: rgb(56, 45, 45);
+    color: white;
+}
+nav .mainul{
+    width: 70%;
+    justify-content: center;
+    display: flex;
+    list-style: none;
+
+    align-items: center;
+}
+nav .mainul a{
+    margin: 0px 0.5rem;
+    padding: 0px 0.5rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+nav .mainul a:hover{
+    color: rgb(142, 205, 225);
+}
+nav .mainul button{
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    outline: none;
+    background-color: rgb(56, 45, 45);
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+nav .mainul button:hover{
+    color: rgb(142, 205, 225);
+}
+.drop{
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    list-style: none;
+    background-color: rgb(56, 45, 45);
+    display: none;
+    top: 10px;
+    
+}
+.drop li{
+    margin:  5px;
+    padding: 5px ;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+.drop li a{
+    color: white;
+    font-size: 1rem;
+
+}
+.drop li a:hover{
+    color: rgb(142, 205, 225);
+
+}

@@ -1,0 +1,7 @@
+.carousel::before{
+    content: "";
+    position: absolute;
+    background:url('');
+    height:90vh;
+    width:100%;
+}
